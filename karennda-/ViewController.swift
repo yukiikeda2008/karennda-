@@ -29,9 +29,33 @@ class ViewController: UIViewController {
     @IBAction func tappedHeaderPrevBtn (sender: UIButton) {
         
         
-    //②タップ時
-    @IBAction func tappedHeaderNextBtn (sender: UIButton) {
+        //②タップ時
+        @IBAction func tappedHeaderNextBtn (sender: UIButton) {
         }
         
-        //
+    }
+    
+    import UIKit
+    
+    class CakenderCell: UICollectionViewCell {
+        
+        ver textLabel: UILabel!
+        
+        repuired init(coder aDecoder: NSCoder) {
+            super. init(coder: aDecoder)!
+            
+            //UILabelを作成
+            textLabel = UILabel(frame: CGRectMake(0,0,self.frame.width,self . feame . height))
+            textLabel. font = UIFont (name: "HoraKAkuProN-W3", size:12)
+            textLabel?.textAlignment = NSTextAlignment.Center
+            //Cellに追加
+            self.addSubview(textLabel!)
+        }
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+        }
+            
+                                                  
+        }
     }
