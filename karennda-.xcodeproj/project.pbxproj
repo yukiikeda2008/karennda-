@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53A32E72DF05404001EE9A3 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A32E62DF05404001EE9A3 /* NotificationManager.swift */; };
+		B54267582D65DEA800C04ABD /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54267572D65DEA800C04ABD /* DateManager.swift */; };
+		B542675B2D65DEF500C04ABD /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54267592D65DEF500C04ABD /* CalendarCell.swift */; };
+		B542675C2D65DEF500C04ABD /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B542675A2D65DEF500C04ABD /* CalendarCell.xib */; };
+		B542675E2D7EE70400C04ABD /* MedicationModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542675D2D7EE70400C04ABD /* MedicationModalViewController.swift */; };
+		B54AA3952DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */; };
+		B54AA3962DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3912DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf */; };
+		B54AA3972DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3922DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf */; };
+		B54AA3982DCB6F0300504FD3 /* KaiseiTokumin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3932DCB6F0300504FD3 /* KaiseiTokumin-Bold.ttf */; };
+		B54AA3992DCB6F0300504FD3 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3942DCB6F0300504FD3 /* OFL.txt */; };
 		B5821BB62D4A3F37002017E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB52D4A3F37002017E1 /* AppDelegate.swift */; };
 		B5821BB82D4A3F37002017E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */; };
 		B5821BBA2D4A3F37002017E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB92D4A3F37002017E1 /* ViewController.swift */; };
@@ -16,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53A32E62DF05404001EE9A3 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B54267572D65DEA800C04ABD /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		B54267592D65DEF500C04ABD /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		B542675A2D65DEF500C04ABD /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		B542675D2D7EE70400C04ABD /* MedicationModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationModalViewController.swift; sourceTree = "<group>"; };
+		B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-Medium.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-Medium.ttf"; sourceTree = "<group>"; };
+		B54AA3912DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-ExtraBold.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B54AA3922DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-Regular.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-Regular.ttf"; sourceTree = "<group>"; };
+		B54AA3932DCB6F0300504FD3 /* KaiseiTokumin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-Bold.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-Bold.ttf"; sourceTree = "<group>"; };
+		B54AA3942DCB6F0300504FD3 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = OFL.txt; path = "../../../Downloads/フォント/OFL.txt"; sourceTree = "<group>"; };
 		B5821BB22D4A3F37002017E1 /* karennda-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "karennda-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5821BB52D4A3F37002017E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +76,12 @@
 		B5821BB42D4A3F37002017E1 /* karennda- */ = {
 			isa = PBXGroup;
 			children = (
+				B54AA3932DCB6F0300504FD3 /* KaiseiTokumin-Bold.ttf */,
+				B54AA3912DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf */,
+				B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */,
+				B54AA3922DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf */,
+				B54AA3942DCB6F0300504FD3 /* OFL.txt */,
+				B542675D2D7EE70400C04ABD /* MedicationModalViewController.swift */,
 				B5821BB52D4A3F37002017E1 /* AppDelegate.swift */,
 				B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */,
 				B5821BB92D4A3F37002017E1 /* ViewController.swift */,
@@ -63,6 +89,10 @@
 				B5821BBE2D4A3F38002017E1 /* Assets.xcassets */,
 				B5821BC02D4A3F38002017E1 /* LaunchScreen.storyboard */,
 				B5821BC32D4A3F38002017E1 /* Info.plist */,
+				B54267572D65DEA800C04ABD /* DateManager.swift */,
+				B54267592D65DEF500C04ABD /* CalendarCell.swift */,
+				B542675A2D65DEF500C04ABD /* CalendarCell.xib */,
+				B53A32E62DF05404001EE9A3 /* NotificationManager.swift */,
 			);
 			path = "karennda-";
 			sourceTree = "<group>";
@@ -125,9 +155,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54AA3972DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf in Resources */,
+				B54AA3962DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf in Resources */,
 				B5821BC22D4A3F38002017E1 /* LaunchScreen.storyboard in Resources */,
+				B54AA3992DCB6F0300504FD3 /* OFL.txt in Resources */,
 				B5821BBF2D4A3F38002017E1 /* Assets.xcassets in Resources */,
+				B54AA3952DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf in Resources */,
+				B54AA3982DCB6F0300504FD3 /* KaiseiTokumin-Bold.ttf in Resources */,
 				B5821BBD2D4A3F37002017E1 /* Main.storyboard in Resources */,
+				B542675C2D65DEF500C04ABD /* CalendarCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5821BBA2D4A3F37002017E1 /* ViewController.swift in Sources */,
+				B542675E2D7EE70400C04ABD /* MedicationModalViewController.swift in Sources */,
+				B54267582D65DEA800C04ABD /* DateManager.swift in Sources */,
+				B542675B2D65DEF500C04ABD /* CalendarCell.swift in Sources */,
+				B53A32E72DF05404001EE9A3 /* NotificationManager.swift in Sources */,
 				B5821BB62D4A3F37002017E1 /* AppDelegate.swift in Sources */,
 				B5821BB82D4A3F37002017E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,8 +332,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMDXQ86AQN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "karennda-/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,8 +362,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMDXQ86AQN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "karennda-/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

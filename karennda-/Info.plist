@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>KaiseiTokumin-Bold.ttf</key>
+	<string></string>
+	<key>KaiseiTokumin-ExtraBold.ttf</key>
+	<string></string>
+	<key>KaiseiTokumin-Medium.ttf</key>
+	<string></string>
+	<key>KaiseiTokumin-Regular.ttf</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
