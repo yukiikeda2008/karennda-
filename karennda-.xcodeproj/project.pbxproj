@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B53A32E72DF05404001EE9A3 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A32E62DF05404001EE9A3 /* NotificationManager.swift */; };
-		B54267582D65DEA800C04ABD /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54267572D65DEA800C04ABD /* DateManager.swift */; };
-		B542675B2D65DEF500C04ABD /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54267592D65DEF500C04ABD /* CalendarCell.swift */; };
-		B542675C2D65DEF500C04ABD /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B542675A2D65DEF500C04ABD /* CalendarCell.xib */; };
-		B542675E2D7EE70400C04ABD /* MedicationModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542675D2D7EE70400C04ABD /* MedicationModalViewController.swift */; };
 		B54AA3952DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */; };
 		B54AA3962DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3912DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf */; };
 		B54AA3972DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3922DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf */; };
@@ -19,25 +15,21 @@
 		B54AA3992DCB6F0300504FD3 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3942DCB6F0300504FD3 /* OFL.txt */; };
 		B5821BB62D4A3F37002017E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB52D4A3F37002017E1 /* AppDelegate.swift */; };
 		B5821BB82D4A3F37002017E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */; };
-		B5821BBA2D4A3F37002017E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB92D4A3F37002017E1 /* ViewController.swift */; };
 		B5821BBD2D4A3F37002017E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5821BBB2D4A3F37002017E1 /* Main.storyboard */; };
 		B5821BBF2D4A3F38002017E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5821BBE2D4A3F38002017E1 /* Assets.xcassets */; };
 		B5821BC22D4A3F38002017E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5821BC02D4A3F38002017E1 /* LaunchScreen.storyboard */; };
+		B583E53D2E30E2DD00EA7E92 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B583E53C2E30E2DD00EA7E92 /* NotificationListViewController.swift */; };
 		B594E0C32E1E6FD400A33938 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0C22E1E6FD400A33938 /* Alarm.swift */; };
-		B594E0C52E1E6FFA00A33938 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0C42E1E6FFA00A33938 /* AlarmManager.swift */; };
-		B594E0C72E1E711B00A33938 /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0C62E1E711B00A33938 /* AlarmListViewController.swift */; };
-		B594E0C92E1E73BC00A33938 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0C82E1E73BC00A33938 /* AddAlarmViewController.swift */; };
+		B594E0C92E1E73BC00A33938 /* NotificationTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0C82E1E73BC00A33938 /* NotificationTimeViewController.swift */; };
 		B594E0CC2E1E829A00A33938 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B594E0CB2E1E829A00A33938 /* FSCalendar */; };
 		B594E0CF2E1E82D300A33938 /* CalculateCalendarLogic in Frameworks */ = {isa = PBXBuildFile; productRef = B594E0CE2E1E82D300A33938 /* CalculateCalendarLogic */; };
 		B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */; };
+		B594E0D32E27B56700A33938 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0D22E27B56700A33938 /* Notification.swift */; };
+		B594E0D52E27B62800A33938 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0D42E27B62800A33938 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B53A32E62DF05404001EE9A3 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		B54267572D65DEA800C04ABD /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
-		B54267592D65DEF500C04ABD /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
-		B542675A2D65DEF500C04ABD /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
-		B542675D2D7EE70400C04ABD /* MedicationModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationModalViewController.swift; sourceTree = "<group>"; };
 		B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-Medium.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-Medium.ttf"; sourceTree = "<group>"; };
 		B54AA3912DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-ExtraBold.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B54AA3922DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-Regular.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-Regular.ttf"; sourceTree = "<group>"; };
@@ -46,16 +38,16 @@
 		B5821BB22D4A3F37002017E1 /* karennda-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "karennda-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5821BB52D4A3F37002017E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5821BB92D4A3F37002017E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5821BBC2D4A3F37002017E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5821BBE2D4A3F38002017E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5821BC12D4A3F38002017E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5821BC32D4A3F38002017E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B583E53C2E30E2DD00EA7E92 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
 		B594E0C22E1E6FD400A33938 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
-		B594E0C42E1E6FFA00A33938 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
-		B594E0C62E1E711B00A33938 /* AlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
-		B594E0C82E1E73BC00A33938 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = SOURCE_ROOT; };
+		B594E0C82E1E73BC00A33938 /* NotificationTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeViewController.swift; sourceTree = SOURCE_ROOT; };
 		B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B594E0D22E27B56700A33938 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		B594E0D42E27B62800A33938 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,23 +87,19 @@
 				B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */,
 				B54AA3922DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf */,
 				B54AA3942DCB6F0300504FD3 /* OFL.txt */,
-				B594E0C62E1E711B00A33938 /* AlarmListViewController.swift */,
 				B594E0C22E1E6FD400A33938 /* Alarm.swift */,
-				B542675D2D7EE70400C04ABD /* MedicationModalViewController.swift */,
-				B594E0C42E1E6FFA00A33938 /* AlarmManager.swift */,
-				B594E0C82E1E73BC00A33938 /* AddAlarmViewController.swift */,
+				B594E0C82E1E73BC00A33938 /* NotificationTimeViewController.swift */,
 				B5821BB52D4A3F37002017E1 /* AppDelegate.swift */,
 				B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */,
-				B5821BB92D4A3F37002017E1 /* ViewController.swift */,
 				B5821BBB2D4A3F37002017E1 /* Main.storyboard */,
 				B5821BBE2D4A3F38002017E1 /* Assets.xcassets */,
 				B5821BC02D4A3F38002017E1 /* LaunchScreen.storyboard */,
 				B5821BC32D4A3F38002017E1 /* Info.plist */,
-				B54267572D65DEA800C04ABD /* DateManager.swift */,
-				B54267592D65DEF500C04ABD /* CalendarCell.swift */,
-				B542675A2D65DEF500C04ABD /* CalendarCell.xib */,
 				B53A32E62DF05404001EE9A3 /* NotificationManager.swift */,
+				B594E0D42E27B62800A33938 /* Persistence.swift */,
 				B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */,
+				B583E53C2E30E2DD00EA7E92 /* NotificationListViewController.swift */,
+				B594E0D22E27B56700A33938 /* Notification.swift */,
 			);
 			path = "karennda-";
 			sourceTree = "<group>";
@@ -190,7 +178,6 @@
 				B54AA3952DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf in Resources */,
 				B54AA3982DCB6F0300504FD3 /* KaiseiTokumin-Bold.ttf in Resources */,
 				B5821BBD2D4A3F37002017E1 /* Main.storyboard in Resources */,
-				B542675C2D65DEF500C04ABD /* CalendarCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,17 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */,
-				B5821BBA2D4A3F37002017E1 /* ViewController.swift in Sources */,
-				B542675E2D7EE70400C04ABD /* MedicationModalViewController.swift in Sources */,
-				B594E0C92E1E73BC00A33938 /* AddAlarmViewController.swift in Sources */,
-				B54267582D65DEA800C04ABD /* DateManager.swift in Sources */,
+				B594E0C92E1E73BC00A33938 /* NotificationTimeViewController.swift in Sources */,
 				B594E0C32E1E6FD400A33938 /* Alarm.swift in Sources */,
-				B542675B2D65DEF500C04ABD /* CalendarCell.swift in Sources */,
 				B53A32E72DF05404001EE9A3 /* NotificationManager.swift in Sources */,
-				B594E0C72E1E711B00A33938 /* AlarmListViewController.swift in Sources */,
+				B594E0D32E27B56700A33938 /* Notification.swift in Sources */,
+				B594E0D52E27B62800A33938 /* Persistence.swift in Sources */,
 				B5821BB62D4A3F37002017E1 /* AppDelegate.swift in Sources */,
+				B583E53D2E30E2DD00EA7E92 /* NotificationListViewController.swift in Sources */,
 				B5821BB82D4A3F37002017E1 /* SceneDelegate.swift in Sources */,
-				B594E0C52E1E6FFA00A33938 /* AlarmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,5 +34,37 @@ class NotificationManager {
             }
         }
     }
+    
+    func scheduleNotification(at date: Date, title: String, body: String) -> String? {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        
+        let interval = date.timeIntervalSinceNow
+        let trigget: UNNotificationTrigger
+        if interval > 60 {
+            var comps = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+            comps.second = 0
+            trigget = UNCalendarNotificationTrigger(dateMatching: comps, repeats: false)
+        } else{
+            trigget = UNTimeIntervalNotificationTrigger(timeInterval: max(interval,1), repeats: false)
+        }
+        
+        let id = UUID().uuidString
+        let request = UNNotificationRequest(identifier: id, content: content, trigger: trigget)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let err = error {
+                print("erron", err)
+            } else {
+                //デバック用：保留中リクエスト一覧を出力
+                UNUserNotificationCenter.current().getPendingNotificationRequests { request in
+                    print("▶︎ Pending Requests:", request.map(\.identifier))
+                }
+            }
+        }
+        return id
+    }
 }
 
