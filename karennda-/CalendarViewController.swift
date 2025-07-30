@@ -74,5 +74,16 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             }
             
             return nil
+            
         }
+    
+    // すでにあるクラス内に追加（FSCalendarDelegateメソッド）
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let medicationVC = storyboard.instantiateViewController(withIdentifier: "MedicationInputViewController") as? MedicationInputViewController {
+            medicationVC.selectedDate = date
+            medicationVC.modalPresentationStyle = .fullScreen // または .pageSheet, .formSheet などでもOK
+            self.present(medicationVC, animated: true, completion: nil)
+        }
+    }
 }
