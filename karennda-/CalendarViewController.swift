@@ -82,7 +82,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let medicationVC = storyboard.instantiateViewController(withIdentifier: "MedicationInputViewController") as? MedicationInputViewController {
             medicationVC.selectedDate = date
-            medicationVC.modalPresentationStyle = .fullScreen // または .pageSheet, .formSheet などでもOK
+            medicationVC.modalPresentationStyle = .formSheet // または .pageSheet, .formSheet などでもOK
             self.present(medicationVC, animated: true, completion: nil)
         }
     }
