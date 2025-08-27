@@ -1,9 +1,7 @@
 import UIKit
-
-class NotificationTimeViewController: UIViewController {
+class AddNotificationViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var scheduleButton: UIButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // iOS 14 以降なら preferredDatePickerStyle を設定すると◎
@@ -13,10 +11,8 @@ class NotificationTimeViewController: UIViewController {
         // 最小日時を現在日時に制限
         datePicker.minimumDate = Date()
     }
-
     @IBAction func scheduleTapped(_ sender: UIButton) {
         let selectedDate = datePicker.date
-
         // 通知許可がまだならリクエスト
         UNUserNotificationCenter.current().getNotificationSettings { settings in
             switch settings.authorizationStatus {
@@ -24,22 +20,39 @@ class NotificationTimeViewController: UIViewController {
                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
                     guard granted else { return }
                     DispatchQueue.main.async {
-                        NotificationManager.shared.scheduleNotification(
+                        guard let id = NotificationManager.shared.scheduleNotification(
                             at: selectedDate,
                             title: "予約通知",
                             body: "設定した時間になりました！"
                         )
+                        else { return }
+                        
+                        // 呼び出し元で保存
+                        let record = Notification(id: id,
+                                                  date: selectedDate,
+                                                  title: "予約通知",
+                                                  body: "設定した時間になりました！")
+                        Persistence.shared.save(record)
                         self.showConfirmation()
                     }
                 }
             case .authorized, .provisional:
                 // メインスレッドでスケジュール
                 DispatchQueue.main.async {
-                    NotificationManager.shared.scheduleNotification(
+                    guard let id = NotificationManager.shared.scheduleNotification(
                         at: selectedDate,
                         title: "予約通知",
                         body: "設定した時間になりました！"
                     )
+                    else { return }
+                    
+                    // 呼び出し元で保存
+                    let record = Notification(id: id,
+                                              date: selectedDate,
+                                              title: "予約通知",
+                                              body: "設定した時間になりました！")
+                    Persistence.shared.save(record)
+                    self.showConfirmation()
                     self.showConfirmation()
                 }
             case .denied:
@@ -51,7 +64,6 @@ class NotificationTimeViewController: UIViewController {
             }
         }
     }
-
     // 確認ダイアログ
     private func showConfirmation() {
         let alert = UIAlertController(
@@ -62,7 +74,6 @@ class NotificationTimeViewController: UIViewController {
         alert.addAction(.init(title: "OK", style: .default))
         present(alert, animated: true)
     }
-
     // 許可されていないときの案内
     private func showPermissionAlert() {
         let alert = UIAlertController(
@@ -77,7 +88,6 @@ class NotificationTimeViewController: UIViewController {
         alert.addAction(.init(title: "キャンセル", style: .cancel))
         present(alert, animated: true)
     }
-
     // 日付フォーマット
     private func formatted(date: Date) -> String {
         let fmt = DateFormatter()

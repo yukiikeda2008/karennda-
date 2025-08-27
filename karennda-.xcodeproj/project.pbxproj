@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51EC51F2E5EE62C003BC69C /* AddNotificationViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51EC51E2E5EE62C003BC69C /* AddNotificationViewControlle.swift */; };
 		B53A32E72DF05404001EE9A3 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A32E62DF05404001EE9A3 /* NotificationManager.swift */; };
 		B54AA3952DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */; };
 		B54AA3962DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54AA3912DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf */; };
@@ -21,7 +22,6 @@
 		B583E53D2E30E2DD00EA7E92 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B583E53C2E30E2DD00EA7E92 /* NotificationListViewController.swift */; };
 		B583E53F2E3A2ADD00EA7E92 /* MedicationInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B583E53E2E3A2ADD00EA7E92 /* MedicationInputViewController.swift */; };
 		B594E0C32E1E6FD400A33938 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0C22E1E6FD400A33938 /* Alarm.swift */; };
-		B594E0C92E1E73BC00A33938 /* NotificationTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0C82E1E73BC00A33938 /* NotificationTimeViewController.swift */; };
 		B594E0CC2E1E829A00A33938 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B594E0CB2E1E829A00A33938 /* FSCalendar */; };
 		B594E0CF2E1E82D300A33938 /* CalculateCalendarLogic in Frameworks */ = {isa = PBXBuildFile; productRef = B594E0CE2E1E82D300A33938 /* CalculateCalendarLogic */; };
 		B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */; };
@@ -30,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B51EC51E2E5EE62C003BC69C /* AddNotificationViewControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationViewControlle.swift; sourceTree = "<group>"; };
 		B53A32E62DF05404001EE9A3 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		B54AA3902DCB6F0300504FD3 /* KaiseiTokumin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-Medium.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-Medium.ttf"; sourceTree = "<group>"; };
 		B54AA3912DCB6F0300504FD3 /* KaiseiTokumin-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KaiseiTokumin-ExtraBold.ttf"; path = "../../../Downloads/フォント/KaiseiTokumin-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		B583E53C2E30E2DD00EA7E92 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
 		B583E53E2E3A2ADD00EA7E92 /* MedicationInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationInputViewController.swift; sourceTree = "<group>"; };
 		B594E0C22E1E6FD400A33938 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
-		B594E0C82E1E73BC00A33938 /* NotificationTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeViewController.swift; sourceTree = SOURCE_ROOT; };
 		B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B594E0D22E27B56700A33938 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B594E0D42E27B62800A33938 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -90,7 +90,6 @@
 				B54AA3922DCB6F0300504FD3 /* KaiseiTokumin-Regular.ttf */,
 				B54AA3942DCB6F0300504FD3 /* OFL.txt */,
 				B594E0C22E1E6FD400A33938 /* Alarm.swift */,
-				B594E0C82E1E73BC00A33938 /* NotificationTimeViewController.swift */,
 				B5821BB52D4A3F37002017E1 /* AppDelegate.swift */,
 				B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */,
 				B5821BBB2D4A3F37002017E1 /* Main.storyboard */,
@@ -103,6 +102,7 @@
 				B583E53C2E30E2DD00EA7E92 /* NotificationListViewController.swift */,
 				B594E0D22E27B56700A33938 /* Notification.swift */,
 				B583E53E2E3A2ADD00EA7E92 /* MedicationInputViewController.swift */,
+				B51EC51E2E5EE62C003BC69C /* AddNotificationViewControlle.swift */,
 			);
 			path = "karennda-";
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */,
-				B594E0C92E1E73BC00A33938 /* NotificationTimeViewController.swift in Sources */,
 				B594E0C32E1E6FD400A33938 /* Alarm.swift in Sources */,
+				B51EC51F2E5EE62C003BC69C /* AddNotificationViewControlle.swift in Sources */,
 				B53A32E72DF05404001EE9A3 /* NotificationManager.swift in Sources */,
 				B583E53F2E3A2ADD00EA7E92 /* MedicationInputViewController.swift in Sources */,
 				B594E0D32E27B56700A33938 /* Notification.swift in Sources */,
