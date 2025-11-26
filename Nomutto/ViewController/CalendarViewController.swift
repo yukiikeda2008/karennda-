@@ -6,16 +6,35 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     @IBOutlet var calendarView: FSCalendar!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-        view.backgroundColor = UIColor(red: 132/255, green: 147/255, blue: 132/255, alpha: 1.0)
-            
-        calendarView.delegate = self
-        calendarView.dataSource = self
-        configureCalendarUI()
-        title = "カレンダー"
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        guard let collectionView = calendarView.collectionView,
+              let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        
+        // --- ヘッダーと曜日行の高さを取得 ---
+        let headerHeight = calendarView.calendarHeaderView.bounds.height
+        let weekdayHeight = calendarView.calendarWeekdayView.bounds.height
+        
+        // カレンダー内で日付セルに割り当てられる合計高さ
+        let availableHeight = max(0, calendarView.bounds.height - headerHeight - weekdayHeight)
+        
+        // 最大6行で割る
+        let rowHeight = floor(availableHeight / 6.0)
+        
+        // 横幅は7列で割る
+        let cellWidth = floor(collectionView.bounds.width / 7.0)
+        
+        // セルサイズを設定（既存のデザインは壊さない）
+        layout.itemSize = CGSize(width: cellWidth, height: rowHeight)
+        calendarView.rowHeight = rowHeight
+        
+        layout.invalidateLayout()
+        // reloadData() は不要
     }
+
 
     fileprivate let gregorian: Calendar = Calendar(identifier: .gregorian)
     fileprivate lazy var dateFormatter: DateFormatter = {
@@ -115,6 +134,49 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .formSheet
         present(nav, animated: true)
+        
+    
+        
+        // 余白を完全に消す
+        calendarView.layoutMargins = .zero
+        calendarView.calendarHeaderView.layoutMargins = .zero
+        calendarView.calendarWeekdayView.layoutMargins = .zero
+        calendarView.collectionView.contentInset = .zero
+        calendarView.collectionView.scrollIndicatorInsets = .zero
+
+        if let layout = calendarView.collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.minimumInteritemSpacing = 0
+            layout.minimumLineSpacing = 0
+            layout.sectionInset = .zero
+            
+            let cellWidth = floor(calendarView.frame.width / 7)
+            layout.itemSize = CGSize(width: cellWidth, height: cellWidth)
+        }
+
+        DispatchQueue.main.async {
+            guard let layout = self.calendarView.collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+
+            layout.minimumInteritemSpacing = 0
+            layout.minimumLineSpacing = 0
+            layout.sectionInset = .zero
+
+            // ▼ カレンダー全体の高さから正確な1行の高さを計算する
+            let totalHeight = self.calendarView.collectionView.bounds.height
+            let rowHeight = floor(totalHeight / 6)   // 6行分で割る
+
+            // 1セルの幅（横幅は7列）
+            let cellWidth = floor(self.calendarView.collectionView.bounds.width / 7)
+
+            layout.itemSize = CGSize(width: cellWidth, height: rowHeight)
+
+            // ▼ ここが最重要ポイント！！
+            //   FSCalendar に「行高さはこれにしろ」と強制する
+            self.calendarView.rowHeight = rowHeight
+
+            layout.invalidateLayout()
+            self.calendarView.reloadData()
+        }
+
     }
 }
 
