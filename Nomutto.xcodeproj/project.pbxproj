@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5068D5A2EA8EF3E0063E169 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D592EA8EF3E0063E169 /* Medication.swift */; };
+		B5068D5C2EA8EF6C0063E169 /* IntakeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D5B2EA8EF6C0063E169 /* IntakeLog.swift */; };
+		B5068D5E2EA8EF910063E169 /* DoseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D5D2EA8EF910063E169 /* DoseSchedule.swift */; };
+		B5068D602EA8EFB10063E169 /* ScheduledNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D5F2EA8EFB10063E169 /* ScheduledNotification.swift */; };
+		B5068D622EA8F00F0063E169 /* ScheduledNotificationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D612EA8F00F0063E169 /* ScheduledNotificationStore.swift */; };
+		B5068D642EA8F02B0063E169 /* MedicationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D632EA8F02B0063E169 /* MedicationStore.swift */; };
+		B5068D662EA8F0430063E169 /* IntakeLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D652EA8F0430063E169 /* IntakeLogStore.swift */; };
+		B5068D682EA8F08E0063E169 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D672EA8F08E0063E169 /* NotificationManager.swift */; };
+		B5068D6A2EA8F0C40063E169 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D692EA8F0C40063E169 /* Date.swift */; };
+		B5068D6E2EA8F1BE0063E169 /* IntakeLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D6D2EA8F1BE0063E169 /* IntakeLogViewController.swift */; };
+		B5068D702EA8F2030063E169 /* MedicationEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068D6F2EA8F2030063E169 /* MedicationEditViewController.swift */; };
+		B5068D732EA8F2DD0063E169 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = B5068D722EA8F2DD0063E169 /* DGCharts */; };
+		B555BB8B2E68582500F3C0C3 /* MedicineListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B555BB8A2E68582500F3C0C3 /* MedicineListViewController.swift */; };
+		B5821BB62D4A3F37002017E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB52D4A3F37002017E1 /* AppDelegate.swift */; };
+		B5821BB82D4A3F37002017E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */; };
+		B5821BBD2D4A3F37002017E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5821BBB2D4A3F37002017E1 /* Main.storyboard */; };
+		B5821BBF2D4A3F38002017E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5821BBE2D4A3F38002017E1 /* Assets.xcassets */; };
+		B5821BC22D4A3F38002017E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5821BC02D4A3F38002017E1 /* LaunchScreen.storyboard */; };
+		B594E0CC2E1E829A00A33938 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B594E0CB2E1E829A00A33938 /* FSCalendar */; };
+		B594E0CF2E1E82D300A33938 /* CalculateCalendarLogic in Frameworks */ = {isa = PBXBuildFile; productRef = B594E0CE2E1E82D300A33938 /* CalculateCalendarLogic */; };
+		B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */; };
+		B5A001C12EBB5F8B00C4F671 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A001C02EBB5F8B00C4F671 /* icon2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5068D592EA8EF3E0063E169 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		B5068D5B2EA8EF6C0063E169 /* IntakeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeLog.swift; sourceTree = "<group>"; };
+		B5068D5D2EA8EF910063E169 /* DoseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseSchedule.swift; sourceTree = "<group>"; };
+		B5068D5F2EA8EFB10063E169 /* ScheduledNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledNotification.swift; sourceTree = "<group>"; };
+		B5068D612EA8F00F0063E169 /* ScheduledNotificationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledNotificationStore.swift; sourceTree = "<group>"; };
+		B5068D632EA8F02B0063E169 /* MedicationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationStore.swift; sourceTree = "<group>"; };
+		B5068D652EA8F0430063E169 /* IntakeLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeLogStore.swift; sourceTree = "<group>"; };
+		B5068D672EA8F08E0063E169 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = ../NotificationManager.swift; sourceTree = "<group>"; };
+		B5068D692EA8F0C40063E169 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		B5068D6D2EA8F1BE0063E169 /* IntakeLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeLogViewController.swift; sourceTree = "<group>"; };
+		B5068D6F2EA8F2030063E169 /* MedicationEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationEditViewController.swift; sourceTree = "<group>"; };
+		B555BB8A2E68582500F3C0C3 /* MedicineListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListViewController.swift; sourceTree = "<group>"; };
+		B5821BB22D4A3F37002017E1 /* karennda-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "karennda-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5821BB52D4A3F37002017E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5821BBC2D4A3F37002017E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5821BBE2D4A3F38002017E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5821BC12D4A3F38002017E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5821BC32D4A3F38002017E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B5A001C02EBB5F8B00C4F671 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = "../../受験/icon2.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5821BAF2D4A3F37002017E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B594E0CF2E1E82D300A33938 /* CalculateCalendarLogic in Frameworks */,
+				B5068D732EA8F2DD0063E169 /* DGCharts in Frameworks */,
+				B594E0CC2E1E829A00A33938 /* FSCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B555BBFB2EA8EB9A00F3C0C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5068D692EA8F0C40063E169 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B555BBFD2EA8EBCD00F3C0C3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */,
+				B5068D6D2EA8F1BE0063E169 /* IntakeLogViewController.swift */,
+				B5068D6F2EA8F2030063E169 /* MedicationEditViewController.swift */,
+				B555BB8A2E68582500F3C0C3 /* MedicineListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B555BBFE2EA8EC1F00F3C0C3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B5068D672EA8F08E0063E169 /* NotificationManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B555BBFF2EA8EC5C00F3C0C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5068D5D2EA8EF910063E169 /* DoseSchedule.swift */,
+				B5068D5B2EA8EF6C0063E169 /* IntakeLog.swift */,
+				B5068D592EA8EF3E0063E169 /* Medication.swift */,
+				B5068D5F2EA8EFB10063E169 /* ScheduledNotification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B555BC002EA8ECE200F3C0C3 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				B5068D652EA8F0430063E169 /* IntakeLogStore.swift */,
+				B5068D632EA8F02B0063E169 /* MedicationStore.swift */,
+				B5068D612EA8F00F0063E169 /* ScheduledNotificationStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		B5821BA92D4A3F37002017E1 = {
+			isa = PBXGroup;
+			children = (
+				B5821BB42D4A3F37002017E1 /* Nomutto */,
+				B5821BB32D4A3F37002017E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5821BB32D4A3F37002017E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5821BB22D4A3F37002017E1 /* karennda-.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5821BB42D4A3F37002017E1 /* Nomutto */ = {
+			isa = PBXGroup;
+			children = (
+				B5A001C02EBB5F8B00C4F671 /* icon2.png */,
+				B5821BB52D4A3F37002017E1 /* AppDelegate.swift */,
+				B5821BB72D4A3F37002017E1 /* SceneDelegate.swift */,
+				B5821BC32D4A3F38002017E1 /* Info.plist */,
+				B5821BC02D4A3F38002017E1 /* LaunchScreen.storyboard */,
+				B5821BBE2D4A3F38002017E1 /* Assets.xcassets */,
+				B5821BBB2D4A3F37002017E1 /* Main.storyboard */,
+				B555BBFB2EA8EB9A00F3C0C3 /* Extensions */,
+				B555BBFD2EA8EBCD00F3C0C3 /* ViewController */,
+				B555BBFE2EA8EC1F00F3C0C3 /* Service */,
+				B555BBFF2EA8EC5C00F3C0C3 /* Model */,
+				B555BC002EA8ECE200F3C0C3 /* Store */,
+			);
+			path = Nomutto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5821BB12D4A3F37002017E1 /* karennda- */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5821BC62D4A3F38002017E1 /* Build configuration list for PBXNativeTarget "karennda-" */;
+			buildPhases = (
+				B5821BAE2D4A3F37002017E1 /* Sources */,
+				B5821BAF2D4A3F37002017E1 /* Frameworks */,
+				B5821BB02D4A3F37002017E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "karennda-";
+			packageProductDependencies = (
+				B594E0CB2E1E829A00A33938 /* FSCalendar */,
+				B594E0CE2E1E82D300A33938 /* CalculateCalendarLogic */,
+				B5068D722EA8F2DD0063E169 /* DGCharts */,
+			);
+			productName = "karennda-";
+			productReference = B5821BB22D4A3F37002017E1 /* karennda-.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5821BAA2D4A3F37002017E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B5821BB12D4A3F37002017E1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B5821BAD2D4A3F37002017E1 /* Build configuration list for PBXProject "Nomutto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5821BA92D4A3F37002017E1;
+			packageReferences = (
+				B594E0CA2E1E829A00A33938 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				B594E0CD2E1E82D300A33938 /* XCRemoteSwiftPackageReference "handMadeCalendarAdvance" */,
+				B5068D712EA8F2DD0063E169 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = B5821BB32D4A3F37002017E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5821BB12D4A3F37002017E1 /* karennda- */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5821BB02D4A3F37002017E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5821BC22D4A3F38002017E1 /* LaunchScreen.storyboard in Resources */,
+				B5821BBF2D4A3F38002017E1 /* Assets.xcassets in Resources */,
+				B5821BBD2D4A3F37002017E1 /* Main.storyboard in Resources */,
+				B5A001C12EBB5F8B00C4F671 /* icon2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5821BAE2D4A3F37002017E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5068D622EA8F00F0063E169 /* ScheduledNotificationStore.swift in Sources */,
+				B5068D602EA8EFB10063E169 /* ScheduledNotification.swift in Sources */,
+				B5068D662EA8F0430063E169 /* IntakeLogStore.swift in Sources */,
+				B5068D6E2EA8F1BE0063E169 /* IntakeLogViewController.swift in Sources */,
+				B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */,
+				B5068D5C2EA8EF6C0063E169 /* IntakeLog.swift in Sources */,
+				B5068D682EA8F08E0063E169 /* NotificationManager.swift in Sources */,
+				B555BB8B2E68582500F3C0C3 /* MedicineListViewController.swift in Sources */,
+				B5821BB62D4A3F37002017E1 /* AppDelegate.swift in Sources */,
+				B5068D5E2EA8EF910063E169 /* DoseSchedule.swift in Sources */,
+				B5068D642EA8F02B0063E169 /* MedicationStore.swift in Sources */,
+				B5068D702EA8F2030063E169 /* MedicationEditViewController.swift in Sources */,
+				B5068D5A2EA8EF3E0063E169 /* Medication.swift in Sources */,
+				B5068D6A2EA8F0C40063E169 /* Date.swift in Sources */,
+				B5821BB82D4A3F37002017E1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5821BBB2D4A3F37002017E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5821BBC2D4A3F37002017E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5821BC02D4A3F38002017E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5821BC12D4A3F38002017E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5821BC42D4A3F38002017E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5821BC52D4A3F38002017E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5821BC72D4A3F38002017E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMDXQ86AQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nomutto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.ikeda.yuki.karennda-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5821BC82D4A3F38002017E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMDXQ86AQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nomutto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.ikeda.yuki.karennda-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5821BAD2D4A3F37002017E1 /* Build configuration list for PBXProject "Nomutto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5821BC42D4A3F38002017E1 /* Debug */,
+				B5821BC52D4A3F38002017E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5821BC62D4A3F38002017E1 /* Build configuration list for PBXNativeTarget "karennda-" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5821BC72D4A3F38002017E1 /* Debug */,
+				B5821BC82D4A3F38002017E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5068D712EA8F2DD0063E169 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChartsOrg/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		B594E0CA2E1E829A00A33938 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		B594E0CD2E1E82D300A33938 /* XCRemoteSwiftPackageReference "handMadeCalendarAdvance" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fumiyasac/handMadeCalendarAdvance";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5068D722EA8F2DD0063E169 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5068D712EA8F2DD0063E169 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		B594E0CB2E1E829A00A33938 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B594E0CA2E1E829A00A33938 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		B594E0CE2E1E82D300A33938 /* CalculateCalendarLogic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B594E0CD2E1E82D300A33938 /* XCRemoteSwiftPackageReference "handMadeCalendarAdvance" */;
+			productName = CalculateCalendarLogic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B5821BAA2D4A3F37002017E1 /* Project object */;
+}
