@@ -29,6 +29,8 @@
 		B594E0CF2E1E82D300A33938 /* CalculateCalendarLogic in Frameworks */ = {isa = PBXBuildFile; productRef = B594E0CE2E1E82D300A33938 /* CalculateCalendarLogic */; };
 		B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */; };
 		B5A001C12EBB5F8B00C4F671 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A001C02EBB5F8B00C4F671 /* icon2.png */; };
+		B5DBC7B42EE9852D00F32F45 /*  CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBC7B32EE9852D00F32F45 /*  CustomCalendarView.swift */; };
+		B5DBC7B62EE9857200F32F45 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBC7B52EE9857200F32F45 /* DayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		B5821BC32D4A3F38002017E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B5A001C02EBB5F8B00C4F671 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = "../../受験/icon2.png"; sourceTree = "<group>"; };
+		B5DBC7B32EE9852D00F32F45 /*  CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CustomCalendarView.swift"; sourceTree = "<group>"; };
+		B5DBC7B52EE9857200F32F45 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				B594E0D02E1E8A0700A33938 /* CalendarViewController.swift */,
 				B5068D6D2EA8F1BE0063E169 /* IntakeLogViewController.swift */,
+				B5DBC7B52EE9857200F32F45 /* DayCell.swift */,
+				B5DBC7B32EE9852D00F32F45 /*  CustomCalendarView.swift */,
 				B5068D6F2EA8F2030063E169 /* MedicationEditViewController.swift */,
 				B555BB8A2E68582500F3C0C3 /* MedicineListViewController.swift */,
 			);
@@ -238,9 +244,11 @@
 				B5068D602EA8EFB10063E169 /* ScheduledNotification.swift in Sources */,
 				B5068D662EA8F0430063E169 /* IntakeLogStore.swift in Sources */,
 				B5068D6E2EA8F1BE0063E169 /* IntakeLogViewController.swift in Sources */,
+				B5DBC7B42EE9852D00F32F45 /*  CustomCalendarView.swift in Sources */,
 				B594E0D12E1E8A0700A33938 /* CalendarViewController.swift in Sources */,
 				B5068D5C2EA8EF6C0063E169 /* IntakeLog.swift in Sources */,
 				B5068D682EA8F08E0063E169 /* NotificationManager.swift in Sources */,
+				B5DBC7B62EE9857200F32F45 /* DayCell.swift in Sources */,
 				B555BB8B2E68582500F3C0C3 /* MedicineListViewController.swift in Sources */,
 				B5821BB62D4A3F37002017E1 /* AppDelegate.swift in Sources */,
 				B5068D5E2EA8EF910063E169 /* DoseSchedule.swift in Sources */,
